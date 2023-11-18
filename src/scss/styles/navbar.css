@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+:root {
+  /* Primary */
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  /* Neutral */
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+:root {
+  --ff: "Inter", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.75rem 0 2.3125rem 0;
+}
+.wrapper nav {
+  background-color: var(--off-white);
+  display: none;
+  flex-direction: column;
+  padding-top: 96px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+}
+.wrapper nav > a {
+  font-size: 1.125rem;
+  margin-left: 50px;
+  color: var(--very-dark-blue);
+}
+.wrapper nav a + a {
+  margin-top: 1.5rem;
+}
+@media (min-width: 42.5rem) {
+  .wrapper nav a + a {
+    margin-top: 0rem;
+  }
+}
+.wrapper nav .closeMenu {
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+}
+@media (min-width: 42.5rem) {
+  .wrapper nav .closeMenu {
+    display: none;
+  }
+}
+.wrapper nav.open {
+  display: flex;
+}
+@media (min-width: 42.5rem) {
+  .wrapper nav {
+    all: unset;
+  }
+}
+@media (min-width: 42.5rem) {
+  .wrapper .openMenu {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */

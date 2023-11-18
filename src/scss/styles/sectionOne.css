@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+:root {
+  /* Primary */
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  /* Neutral */
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+:root {
+  --ff: "Inter", sans-serif;
+}
+
+.sectionOne {
+  font-family: var(--ff);
+}
+.sectionOne__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--very-dark-blue);
+  padding: 1.5rem 0 1rem 0;
+}
+@media (min-width: 62.5rem) {
+  .sectionOne__title {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+.sectionOne__p {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.sectionOne__p > p {
+  padding: 16px 0 24px 0;
+  font-size: 0.9375rem;
+  line-height: 1.73;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+.sectionOne__btn {
+  font-family: var(--ff);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.71;
+  background-color: var(--soft-red);
+  border: none;
+  color: var(--off-white);
+  padding: 0.6rem 2rem;
+}
+.sectionOne .sectionDark {
+  background-color: var(--very-dark-blue);
+  margin-top: 4rem;
+  padding-inline: 1.25rem;
+  padding-block: 1.5rem;
+}
+.sectionOne .sectionDark__title {
+  font-size: 2rem;
+  margin-bottom: 2.1875rem;
+  color: var(--soft-orange);
+}
+.sectionOne .sectionDark__card:is(:nth-of-type(1)) {
+  padding-bottom: 1.8125rem;
+}
+.sectionOne .sectionDark__card:is(:nth-of-type(2)) {
+  padding-block: 1.8125rem;
+  border-block: 0.0625rem solid var(--dark-grayish-blue);
+}
+.sectionOne .sectionDark__card:is(:nth-of-type(3)) {
+  padding-top: 1.8125rem;
+}
+.sectionOne .sectionDark__subtitle {
+  color: var(--off-white);
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.sectionOne .sectionDark__p p {
+  color: var(--grayish-blue);
+}
+@media (min-width: 62.5rem) {
+  .sectionOne .sectionDark {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin-top: 0;
+  }
+}
+@media (min-width: 62.5rem) {
+  .sectionOne {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*  grid-template-rows: auto 1fr 1fr; */
+  }
+  .sectionOne > picture {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}/*# sourceMappingURL=sectionOne.css.map */

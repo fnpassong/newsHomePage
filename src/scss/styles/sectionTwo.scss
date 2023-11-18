@@ -1,0 +1,69 @@
+@use '../abstract/' as *;
+ 
+
+.sectionTwo {
+
+    margin-block: 4rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9375rem;
+
+       @media (min-width:62.5rem) {
+        flex-direction: row;
+       }
+
+    }
+    
+
+    &__card {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+     
+    }
+
+   
+    &__num {
+        font-size: 2rem;
+        color: var(--grayish-blue);
+        margin-bottom: 0.75rem;
+    }
+
+ 
+    &__title {
+        font-size: 1.125rem;
+        font-weight: 800;
+        color: var(--very-dark-blue);
+        margin-bottom: 0.5625rem; 
+        line-height: 1.33;
+    }
+
+    &__text {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0.9375rem;
+
+        @media (muin-width:62.5rem) {
+            width: min(226px, 90%);
+        }
+    }
+
+    &__p {
+
+        font-size: 0.9375rem;
+        line-height: 1.7;
+        color: var(--grayish-blue);
+    }
+ 
+   
+
+ 
+    
+
+
+   
+
+}
